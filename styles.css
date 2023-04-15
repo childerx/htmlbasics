@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    background-color: #000;
+}
+
+.content{
+    max-width: 960px;
+    /* background-color: #fff; */
+    margin: 0 auto;
+}
+
+.top-nav{
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #139ad4;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    
+}
+
+.org-name{
+    margin: 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.top-nav-ul{
+    display: flex;
+    
+}
+
+.top-nav-ul li{
+    margin: 15px 10px;
+    font-size: 18px;
+}
+
+.content-page{
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-nav{
+    position: fixed;
+    top: 80;
+    left: 15;
+    height: 90vh;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+}
+
+.side-nav ul{
+    padding: 10px;
+    margin: 15px;
+}
+
+.side-nav ul li{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.mid-page{
+    display: flex;
+    flex-direction: column;
+    /* margin: auto; */
+    margin-left: 15%;
+    padding: 10px;
+}
+
+.mid-page-header{
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.mid-page h1{
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+.mid-page h3{
+    font-weight: bold;
+    line-height: 1.5em;
+    letter-spacing: 0.8px;
+    word-spacing: 1px;
+}
+
+.button-container{
+    margin: 15px;
+    display: flex;
+}
+
+.button-container button{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #3d5cc9;
+    border: 0.1px solid #1c42cd;
+    box-shadow: 0.2 0.2 10px #3d5cc9;
+    border-radius: 20px;
+    font-size: 16px;
+    
+}
+
+
+.button-container button svg{
+    
+    padding-left: 5px;
+    
+}
+
+.about{
+    background: linear-gradient(to bottom right, #000000 0%, #1f1f7f 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 15px;
+    box-shadow:  0 10px 25px rgba(0, 0, 0, 0.2);;
+}
+
+.about .img-cont{
+    width: 40%;
+    
+}
+
+.about .img-cont img{
+    opacity: 0.8;
+    border-radius: 7px;
+    box-shadow:  0 10px 25px rgba(0, 0, 0, 0.2);;
+}
+
+.about .about-page{
+    margin-left: 10px;
+    width: 46%;
+    color: #efefef;
+    line-height: 20px;
+    letter-spacing: 1.2px;
+}
+
+.about h2{
+    text-align: justify;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.about .about-header{
+    width: 20%;
+    border: 3px solid #3b3bde;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.about-content{
+    margin-top: 25px;
+    line-height: 23px;
+}
+
+.about-content .about-content-indv{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.about-content-indv svg{
+    margin-right: 10px;
+    
+}
+
+.about-button{
+    margin: 60px 10px 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-button button{
+    display: flex;
+    justify-content: start;
+    margin-right: 2px;
+    padding: 10px 15px;
+    background-color: #3d5cc9;
+    border: 0.1px solid #1c42cd;
+    box-shadow: 0.2 0.2 10px #3d5cc9;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px)  {
+    .content{
+        min-width: 100%;
+        /* overflow: hidden; */
+        margin: auto;
+    }
+
+    .top-nav-ul{
+        display: none;
+    }
+
+    .org-name{
+        margin: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .mid-page h1{
+        font-size: 30px;
+    }
+    .side-nav{
+        display: none;
+    }
+
+    .mid-page{
+        margin: auto;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 880px)  {
+    .side-nav{
+        display: none;
+    }
+
+    .mid-page{
+        margin: auto;
+        padding: 10px;
+    }
+}
